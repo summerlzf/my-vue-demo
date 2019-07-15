@@ -53,7 +53,7 @@
         </a>
       </li>
       <li>
-        <a :href="baiduUrl" target="_blank">
+        <a href="javascript:;" @click="open()">
           【baidu】
         </a>
       </li>
@@ -68,6 +68,11 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       baiduUrl: 'https://www.baidu.com'
+    }
+  },
+  methods: {
+    open() {
+      alert(this.baiduUrl);
     }
   }
 }
